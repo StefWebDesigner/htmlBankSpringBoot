@@ -1,0 +1,37 @@
+
+.header-title, .nav-item, .header-subtitle {
+    color: navy;
+    text-shadow: 2px 2px 5px;
+
+}
+
+
+.header-title {
+    font-size: 50px;
+}
+
+.header-subtitle {
+    font-size: 25px;
+}
+
+.nav-item {
+    font-size: 20px;
+    border: white outset 2px;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: lightgreen;
+}
+
+ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+}

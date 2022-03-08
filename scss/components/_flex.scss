@@ -1,0 +1,23 @@
+//MAIN FLEX CONTAINERS
+
+ .header-container, .nav-container, .main-container {
+    display: flex;
+}
+
+//MAIN CHILD ELEMENTS FLEX ITEMS
+.header-title, .nav-item, .logo, .header-subtitle {
+    display: flex;
+}
+
+.header-container {
+    flex-direction: column;
+}
+
+.header-title, .nav-item, .header-subtitle{
+    justify-content: center;
+}
+
+.nav-container {
+    justify-content: center;
+}
+
