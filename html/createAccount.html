@@ -20,9 +20,37 @@
 </header>
 
 <body>
+
     <main class="main-container">
+
+        <div class="form-container">
+            <div class="form-info-section-container">
+                <h1 class="form-title">Create An Account</h1>
+                <!-- <h2 class="form-sutitle"> </h2> -->
+            </div>
+
+            <div class="form-function-container">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter username" name="username" id="username" required>
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter email" name="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="text" placeholder="Enter password" name="password" id="password" required>
+            </div>
+
+            <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
+
+
+        </div>
+
+
+
+    </main>
+
+
+    <div class="logo-container">
         <img src="../images/logo.svg" alt="" class="logo">
-    </main> 
+    </div> 
 </body>
 
 </html>
