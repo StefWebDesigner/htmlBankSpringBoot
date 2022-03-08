@@ -30,15 +30,18 @@
             </div>
 
             <div class="form-function-container">
-                <label for="username">Username</label>
+                <label class="form-label" for="username">Username</label>
                 <input type="text" placeholder="Enter username" name="username" id="username" required>
-                <label for="email">Email</label>
+                <label class="form-label" for="email">Email</label>
                 <input type="text" placeholder="Enter email" name="email" id="email" required>
-                <label for="password">Password</label>
+                <label class="form-label" for="password">Password</label>
                 <input type="text" placeholder="Enter password" name="password" id="password" required>
+            
+                <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
+
             </div>
 
-            <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
+            <!-- <button type="submit" class="form-button" onclick="postRequest()">Submit</button> -->
 
 
         </div>

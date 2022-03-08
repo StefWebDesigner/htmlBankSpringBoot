@@ -1,4 +1,9 @@
-.header-title, .nav-item, .header-subtitle {
+.header-title,
+.nav-item,
+.header-subtitle,
+.form-title,
+.form-button,
+.form-label {
   color: navy;
   text-shadow: 2px 2px 5px;
 }
@@ -30,6 +35,102 @@ ul {
 
 .nav-item a {
   text-decoration: none;
+}
+
+.form-container,
+.form-info-section-container,
+.form-function-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-title,
+.form-label,
+.form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-info-section-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-function-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 17px;
+  text-align: center;
+}
+
+input:-ms-input-placeholder {
+  font-size: 17px;
+  text-align: center;
+}
+
+input::-ms-input-placeholder {
+  font-size: 17px;
+  text-align: center;
+}
+
+input::placeholder {
+  font-size: 17px;
+  text-align: center;
+}
+
+.form-label {
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-button {
+  width: 50%;
+  margin-top: 25px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  border: white outset 2px;
+  font-size: 20px;
 }
 
 .logo {

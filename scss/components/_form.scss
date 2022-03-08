@@ -1,1 +1,64 @@
 //FLEX FORM SECTIONS
+
+.form-container,
+.form-info-section-container,
+.form-function-container {
+    display: flex;  
+}
+
+.form-title,
+.form-label,
+.form-button {
+    display: flex;
+}
+
+.main-container {
+    justify-content: center;
+}
+
+.form-container {
+    flex-direction: column;
+}
+
+.form-info-section-container {
+    flex-direction: column;
+}
+
+.form-function-container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    @include border-radius;
+}
+
+input::placeholder {
+    font-size: 17px;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.form-button {
+    width: 50%;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    justify-content: center;
+    @include border-radius;
+    @include white-border; 
+    font-size: 20px;
+}
+
+

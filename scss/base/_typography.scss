@@ -1,5 +1,10 @@
 
-.header-title, .nav-item, .header-subtitle {
+.header-title, 
+.nav-item, 
+.header-subtitle, 
+.form-title, 
+.form-button,
+.form-label {
     color: navy;
     text-shadow: 2px 2px 5px;
 
@@ -16,7 +21,7 @@
 
 .nav-item {
     font-size: 20px;
-    border: white outset 2px;
+    @include white-border; 
     border-radius: 25px;
     margin-top: 10px;
     padding-top: 5px;

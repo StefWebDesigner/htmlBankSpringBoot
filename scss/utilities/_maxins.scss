@@ -1,0 +1,7 @@
+@mixin white-border {
+    border: white outset 2px;
+}
+
+@mixin border-radius {
+    border-radius: 25px;
+}
