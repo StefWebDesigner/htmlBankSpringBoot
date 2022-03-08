@@ -8,7 +8,8 @@
 
 .form-title,
 .form-label,
-.form-button {
+.form-button, 
+.form-deposit-label {
     display: flex;
 }
 
@@ -40,6 +41,15 @@ input {
 input::placeholder {
     font-size: 17px;
     text-align: center;
+}
+
+
+
+.form-deposit-label, .form-withdraw-label   {
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .form-label {

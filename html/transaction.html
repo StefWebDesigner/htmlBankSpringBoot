@@ -9,12 +9,10 @@
 </head>
 <header class="header-container">
     <h1 class="header-title">Bank App</h1>
-    <h2 class="header-subtitle">Let's Create An Account</h2>
+    <h2 class="header-subtitle">Bank Activities</h2>
     <nav class="nav-container">
         <ul>
             <li class="nav-item"><a href="../index.html">HOME</a></li>
-            <li class="nav-item"><a href="">LOGIN</a></li>
-            <li class="nav-item"><a href="../html/transaction.html">TRANSACTION</a></li>
             <li class="nav-item"><a href="">ADMIN</a></li>
         </ul>
     </nav>
@@ -26,18 +24,21 @@
 
         <div class="form-container">
             <div class="form-info-section-container">
-                <h1 class="form-title">Create An Account</h1>
-                <!-- <h2 class="form-sutitle"> </h2> -->
+                <h1 class="form-title">Depositing/Withdrawing</h1>
             </div>
 
             <div class="form-function-container">
-                <label class="form-label" for="username">Username</label>
-                <input type="text" placeholder="Enter username" name="username" id="username" required>
-                <label class="form-label" for="email">Email</label>
-                <input type="text" placeholder="Enter email" name="email" id="email" required>
-                <label class="form-label" for="password">Password</label>
-                <input type="text" placeholder="Enter password" name="password" id="password" required>
-            
+                <h3 class="form-deposit-label">Deposit function </h3>
+                <label class="form-label" for="deposit">Enter Depositing Amount</label>
+                <input type="text" placeholder="Enter Depositing Amount" name="deposit" id="deposit" required>            
+                <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
+
+            </div>
+
+            <div class="form-function-container">
+                <h3 class="form-withdraw-label">Withdrawing function </h3>
+                <label class="form-label" for="withdraw">Enter Withdraw Amount</label>
+                <input type="text" placeholder="Enter withdraw Amount" name="withdraw" id="withdraw" required>            
                 <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
 
             </div>

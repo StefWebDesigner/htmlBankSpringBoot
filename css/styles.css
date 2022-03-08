@@ -47,7 +47,8 @@ ul {
 
 .form-title,
 .form-label,
-.form-button {
+.form-button,
+.form-deposit-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,6 +110,15 @@ input::-ms-input-placeholder {
 input::placeholder {
   font-size: 17px;
   text-align: center;
+}
+
+.form-deposit-label, .form-withdraw-label {
+  font-size: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .form-label {
