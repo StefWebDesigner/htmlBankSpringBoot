@@ -36,8 +36,8 @@
 .nav-item:hover {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 ul {
@@ -51,6 +51,7 @@ ul {
 
 .form-container,
 .form-info-section-container,
+.button-container,
 .form-function-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +80,12 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.button-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form-info-section-container {

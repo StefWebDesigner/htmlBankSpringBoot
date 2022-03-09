@@ -2,6 +2,7 @@
 
 .form-container,
 .form-info-section-container,
+.button-container,
 .form-function-container {
     display: flex;  
 }
@@ -21,6 +22,10 @@
 
 .form-container {
     flex-direction: column;
+}
+
+.button-container {
+    justify-content: center;
 }
 
 .form-info-section-container {
