@@ -1,8 +1,14 @@
 .logo {
-    transform: rotate(360deg);
-    transition-duration: 2s;
-    transition-delay: now;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    // width: 75%;
+    margin-top:50px;
+    width: 90%;
+    animation: rotation 5s linear infinite;
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(360deg);
+        }
+
+    }
 
 }

@@ -4,7 +4,10 @@
 .header-subtitle, 
 .form-title, 
 .form-button,
-.form-label {
+.form-label,
+.form-deposit-label,
+.form-withdraw-label,
+.form-account-label {
     color: navy;
     text-shadow: 2px 2px 5px;
 
@@ -29,6 +32,14 @@
     padding-left: 2px;
     padding-right: 2px;
     background-color: lightgreen;
+    box-shadow: 2px 2px 5px ;
+    
+
+}
+
+.nav-item:hover {
+    transition: .5s ease-in-out;
+    transform: scale(1.5);
 }
 
 ul {

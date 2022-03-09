@@ -32,6 +32,7 @@
                 <label class="form-label" for="deposit">Enter Depositing Amount</label>
                 <input type="text" placeholder="Enter Depositing Amount" name="deposit" id="deposit" required>            
                 <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
+                <!-- HAVE A ALERT SAY IT WENT THOUGH -->
 
             </div>
 
@@ -40,10 +41,20 @@
                 <label class="form-label" for="withdraw">Enter Withdraw Amount</label>
                 <input type="text" placeholder="Enter withdraw Amount" name="withdraw" id="withdraw" required>            
                 <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
+                <!-- HAVE A ALERT SAY IT WENT THOUGH -->
+
 
             </div>
 
-            <!-- <button type="submit" class="form-button" onclick="postRequest()">Submit</button> -->
+            <div class="form-function-container">
+                <h3 class="form-account-label">Show All Account </h3>
+                <div class="showClientAccountModal" id="userAccount"></div>
+          
+                <button type="submit" class="form-button" onclick="getRequest()">Get Current Balance Now</button>
+
+            </div>
+            
+
 
 
         </div>

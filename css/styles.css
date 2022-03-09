@@ -3,7 +3,10 @@
 .header-subtitle,
 .form-title,
 .form-button,
-.form-label {
+.form-label,
+.form-deposit-label,
+.form-withdraw-label,
+.form-account-label {
   color: navy;
   text-shadow: 2px 2px 5px;
 }
@@ -26,6 +29,15 @@
   padding-left: 2px;
   padding-right: 2px;
   background-color: lightgreen;
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
+}
+
+.nav-item:hover {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 ul {
@@ -48,7 +60,9 @@ ul {
 .form-title,
 .form-label,
 .form-button,
-.form-deposit-label {
+.form-deposit-label,
+.form-withdraw-label,
+.form-account-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +104,8 @@ input {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 25px;
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
 }
 
 input::-webkit-input-placeholder {
@@ -112,7 +128,23 @@ input::placeholder {
   text-align: center;
 }
 
-.form-deposit-label, .form-withdraw-label {
+input:hover {
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
+  color: purple;
+  background-color: lightcyan;
+}
+
+input:focus {
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
+  color: purple;
+  background-color: lightcyan;
+}
+
+.form-deposit-label,
+.form-withdraw-label,
+.form-account-label {
   font-size: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -141,19 +173,39 @@ input::placeholder {
   border-radius: 25px;
   border: white outset 2px;
   font-size: 20px;
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
+}
+
+.form-button:hover {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
+  color: purple;
 }
 
 .logo {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transition-delay: now;
-          transition-delay: now;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  margin-top: 50px;
+  width: 90%;
+  -webkit-animation: rotation 5s linear infinite;
+          animation: rotation 5s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 * {
@@ -193,6 +245,12 @@ body {
 }
 
 .nav-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

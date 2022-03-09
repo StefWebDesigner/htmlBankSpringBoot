@@ -9,7 +9,9 @@
 .form-title,
 .form-label,
 .form-button, 
-.form-deposit-label {
+.form-deposit-label,
+.form-withdraw-label,
+.form-account-label {
     display: flex;
 }
 
@@ -36,6 +38,8 @@ input {
     padding-left: 10px;
     padding-right: 10px;
     @include border-radius;
+    box-shadow: 2px 2px 5px ;
+
 }
 
 input::placeholder {
@@ -43,9 +47,24 @@ input::placeholder {
     text-align: center;
 }
 
+input:hover {
+    box-shadow: 2px 2px 5px ;
+    color: purple;
+    background-color: lightcyan;
+}
 
 
-.form-deposit-label, .form-withdraw-label   {
+input:focus {
+    box-shadow: 2px 2px 5px ;
+    color: purple;
+    background-color: lightcyan;
+}
+
+
+
+.form-deposit-label,
+.form-withdraw-label,
+.form-account-label  {
     font-size: 25px;
     justify-content: center;
     margin-top: 5px;
@@ -69,6 +88,16 @@ input::placeholder {
     @include border-radius;
     @include white-border; 
     font-size: 20px;
+    box-shadow: 2px 2px 5px ;
+
+}
+
+.form-button:hover {
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px ;
+    color: purple;
+
 }
 
 
