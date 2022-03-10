@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank App</title>
     <Link rel="stylesheet" href="../css/styles.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../javascript/index.js"></script>
 </head>
 <header class="header-container">
     <h1 class="header-title">Bank App</h1>
@@ -32,11 +34,15 @@
 
             <div class="form-function-container">
                 <label class="form-label" for="username">Username</label>
-                <input type="text" placeholder="Enter username" name="username" id="username" required>
+                <input type="text" placeholder="Enter username" name="username" id="username">
                 <label class="form-label" for="email">Email</label>
-                <input type="text" placeholder="Enter email" name="email" id="email" required>
+                <input type="text" placeholder="Enter email" name="email" id="email">
                 <label class="form-label" for="password">Password</label>
-                <input type="text" placeholder="Enter password" name="password" id="password" required>
+                <input type="text" placeholder="Enter password" name="password" id="password">
+                <label class="form-label" for="typeCreate">Account type</label>
+                <input type="text" placeholder="Enter CHECKING or SAVING" name="typeCreate" id="typeCreate">
+                <label class="form-label" for="requiresCard">Requires credit card :</label>
+                <input type="text" placeholder="Enter true or false" name="requiresCard" id="requiresCard">
             
                 <div class="button-container">
                     <button type="submit" class="form-button" onclick="postCreateAccountRequest()">Submit</button>

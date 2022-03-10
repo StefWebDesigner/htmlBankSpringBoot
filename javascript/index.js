@@ -1,3 +1,65 @@
+// ======================== CREATE ACCOUNT HTTP REQUEST ============================
+
+//***** JUST NOT WORKING!!! MOVE ON */
+postCreateAccountRequest = () => {
+        console.log("GETTING...CREATING INFORMATION");
+        var username = document.querySelector("#username");
+        var email = document.querySelector("#email");
+        var password = document.querySelector("#password");
+        var typeCreate = document.querySelector("#typeCreate");
+        var requiresCard = document.querySelector("#requiresCard");
+        axios.post(`http://localhost:8080/client/new?type=${typeCreate}&requiresCard=${requiresCard}`, {
+            username: username.value,
+            email: email.value,
+            password: password.value
+        }).then(response => {
+            console.log(response);
+        });
+
+        };
+
+
+
+
+// postCreateAccountRequest = () => {
+//     console.log("GETTING...CREATING INFORMATION");
+//     var url = "http://localhost:8080/client/new";
+//     var username = document.querySelector("#username").value;
+//     var email = document.querySelector("#email").value;
+//     var password = document.querySelector("#password").value;
+//     var typeCreate = document.querySelector("#typeCreate");
+//     var requiresCard = document.querySelector("#requiresCard");
+//     axios.post(`${url}?type=${typeCreate}&requiresCard=${requiresCard}`, { 
+//         username: username.value,
+//         email: email.value,
+//         password: password.value
+//     }).then(response => {
+//         console.log(response.data);
+//         alert("You have successfully created an account...redirecting you now!")
+//         window.location.href = "login.html";
+//     });
+// };
+
+
+  
+//   postRequest = () => {
+//     var id = document.getElementById('id');
+//     var firstName = document.getElementById("firstName");
+//     var lastName = document.getElementById('lastName');
+//     console.log("hello");
+//     console.log(id);
+//   axios.post('http://localhost:8080/user', {
+//     id: id.value,
+//     firstName: firstName.value,
+//     lastName: lastName.value
+//   }).then (response => {
+//       console.log(response);
+  
+//   });
+//   };
+  
+
+
 // ======================== Login HTTP REQUEST ============================
 
 //LOGIN IN  REQUEST
