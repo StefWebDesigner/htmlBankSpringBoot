@@ -45,7 +45,7 @@
                 <input type="text" placeholder="Enter a date" name="date" id="date">            
                 <div class="showClientAccountModal" id="accountByDate"></div>
                 <div class="button-container">
-                    <button type="submit" class="form-button" onclick="getAccountByDataRequest()">Submit</button>
+                    <button type="submit" class="form-button" onclick="getAccountByDateRequest()">Submit</button>
                 </div>
 
                 <!-- HAVE A ALERT SAY IT WENT THOUGH -->
@@ -53,13 +53,14 @@
 
             </div>
 
+            <!-- IDEALY i SHOULD MAKE THIS SELECT MENU --- ITS FINE -->
             <div class="form-function-container">
                 <h3 class="form-withdraw-label">Account by Account Type </h3>
                 <label class="form-label" for="checkingType">Enter checking type</label>
-                <input type="text" placeholder="Enter checking type" name="checkingType" id="checkingType">            
+                <input type="text" placeholder="Enter CHECKING OR SAVING" name="checkingType" id="checkingType">            
                 <div class="showClientAccountModal" id="accountByCheckingAccount"></div>
                 <div class="button-container">
-                    <button type="submit" class="form-button" onclick="getRequest()">Submit</button>
+                    <button type="submit" class="form-button" onclick="getAccountByCheckingRequest()">Submit</button>
                 </div>
 
                 <!-- HAVE A ALERT SAY IT WENT THOUGH -->
