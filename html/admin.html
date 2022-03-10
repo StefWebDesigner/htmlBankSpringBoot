@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank App</title>
     <Link rel="stylesheet" href="../css/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../javascript/index.js"></script>
+    <!-- <script src="../javascript/require.js"></script> -->
 </head>
 <header class="header-container">
     <h1 class="header-title">Bank App</h1>
@@ -30,7 +33,7 @@
                 <h3 class="form-deposit-label">Get All Account </h3>
                 <div class="showClientAccountModal" id="allAccount"></div>
                 <div class="button-container">
-                    <button type="submit" class="form-button" onclick="getRequest()">GET ACCOUNT</button>
+                    <button type="submit" class="form-button" onclick="getAllRequest()">GET ACCOUNT</button>
                 </div>                
                 <!-- HAVE A ALERT SAY IT WENT THOUGH -->
 
@@ -77,6 +80,9 @@
     <div class="logo-container">
         <img src="../images/logo.svg" alt="" class="logo">
     </div> 
+
+
+
 </body>
 
 </html>
