@@ -1,21 +1,21 @@
-// import axios;
+// ======================== Login HTTP REQUEST ============================
+
+//LOGIN IN  REQUEST
+getLoginRequest = () => {
+    console.log("GETTING....LOGIN INFORMATION");
+    var url = "http://localhost:8080/client/login";
+    var usernameLogin = document.querySelector("#usernameLogin").value;
+    var passwordLogin = document.querySelector("#passwordLogin").value;
+    axios.get(url + "?username=" + usernameLogin + "&password=" + passwordLogin).then(response => {
+        console.log(response.data);
+        alert("You information is correct...redirecting you now!");
+        window.location.href = "transaction.html";
+
+    });
+};
 
 
-
-
-
-
-// //FOR TEST WIH USER IN SIMPLE SERVLET
-
-
-postCreateAccountRequest = () => {
-    console.log("Entered create the account request")
-    var url = "http://localhost:8080/client/new"
-}
-
-
-
-// ADMINISTATION HTTP REQUEST
+// ======================== ADMINISTATION HTTP REQUEST ============================
 
 //GET ALL BANK ACCOUNTS
 getAllRequest = () => {
@@ -41,7 +41,7 @@ getAccountByDateRequest = () => {
     });
 };
 
-
+//GET ALL ACCOUNT BY CHECKING ACCOUNT
 getAccountByCheckingRequest = () => {
     console.log("GETTING...ALL ACCOUNTS BY CHECKING");
     var url = "http://localhost:8080/account/type";
