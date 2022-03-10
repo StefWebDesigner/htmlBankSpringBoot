@@ -15,35 +15,40 @@ postCreateAccountRequest = () => {
 
 
 
+// ADMINISTATION HTTP REQUEST
 
-
-// getAllRequest = () => {
-//     console.log("Recieving get request")
-//     var url = "http://localhost:8080/account/all";
-//     axios.get(url).then(response => {
-//         console.log(response.data)
-//             // document.querySelector("#allAccount").innerHTML = JSON.stringify(response.data);
-//             document.querySelector("#allAccount").innerHTML = JSON.parse(response.data);
-
-
-//     });
-// };
-
+//GET ALL BANK ACCOUNTS
 getAllRequest = () => {
-    console.log("Recieving get request")
+    console.log("GETTING....ALL ACCOUNTS");
     var url = "http://localhost:8080/account/all";
     axios.get(url).then(response => {
-        console.log(response.data)
-        var obj = JSON.parse(response.data);
-            obj.
-            // document.querySelector("#allAccount").innerHTML = JSON.stringify(response.data);
-            document.querySelector("#allAccount").innerHTML = JSON.parse(response.data);
-
-
+        console.log(response.data);
+            document.querySelector("#allAccount").innerHTML = JSON.stringify(response.data);
     });
 };
 
 
+//GET ALL ACCOUNT BY DATE
+getAccountByDataRequest = () => {
+    console.log("GETTING....ALL ACCOUNTS BY DATE");
+    var url = "http://localhost:8080/account/date";
+    var date = document.querySelector("#date").value;
+    axios.get(url + "?date="+date).then(response => {  
+        console.log(response.data)
+            document.querySelector("#accountByDate").innerHTML = JSON.stringify(response.data);
+    });
+};
+
+
+
+
+
+
+
+
+
+
+// 2022-02-28
 
 // getRequest = () => {
 //     var url = 'http://localhost:8080/user';
