@@ -32,19 +32,22 @@
             <div class="form-function-container">
                 <h3 class="form-deposit-label">Deposit function </h3>
                 <label class="form-label" for="deposit">Enter Depositing Amount</label>
-                <input type="text" placeholder="Enter Depositing Amount" name="deposit" id="deposit" required>            
+                <input type="text" placeholder="Enter Depositing Amount" name="deposit" id="deposit">
+                <label class="form-label" for="bankId">Enter Bank Id</label>
+                <input type="text" placeholder="Enter bank Id" name="bankId" id="bankId">             
                 <div class="button-container">
-                    <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
+                    <button type="submit" class="form-button" onclick="depositRequest()">Submit</button>
                 </div>                <!-- HAVE A ALERT SAY IT WENT THOUGH -->
 
             </div>
 
             <div class="form-function-container">
-                <h3 class="form-withdraw-label">Withdrawing function </h3>
                 <label class="form-label" for="withdraw">Enter Withdraw Amount</label>
-                <input type="text" placeholder="Enter withdraw Amount" name="withdraw" id="withdraw" required>            
+                <input type="text" placeholder="Enter withdraw Amount" name="withdraw" id="withdraw">            
+                <label class="form-label" for="withdrawBankId">Enter Bank Id</label>
+                <input type="text" placeholder="Enter bank Id" name="withdrawBankId" id="withdrawBankId">
                 <div class="button-container">
-                    <button type="submit" class="form-button" onclick="postRequest()">Submit</button>
+                    <button type="submit" class="form-button" onclick="withdrawRequest()">Submit</button>
                 </div>
 
                 <!-- HAVE A ALERT SAY IT WENT THOUGH -->
