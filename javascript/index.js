@@ -1,24 +1,28 @@
 // ======================== CREATE ACCOUNT HTTP REQUEST ============================
 
+// localhost:8080/client/new?type=SAVING&requiresCard=true
 
-//***** JUST NOT WORKING!!! MOVE ON */
-// postCreateAccountRequest = () => {
-//         console.log("GETTING...CREATING INFORMATION");
-//         var username = document.querySelector("#username");
-//         var email = document.querySelector("#email");
-//         var password = document.querySelector("#password");
-//         var typeCreate = document.querySelector("#typeCreate");
-//         var requiresCard = document.querySelector("#requiresCard");
-//         axios.post(`http://localhost:8080/client/new?type=${typeCreate}&requiresCard=${requiresCard}`, {
-//             username: username.value,
-//             email: email.value,
-//             password: password.value
-//         }).then(response => {
-//             console.log(response);
-//         });
+//I need cors or a reaccuring preflight failed requestion
 
-//         };
-
+postCreateAccountRequest = () => {
+    var url = "http://localhost:8080/client/new";
+    var username = document.querySelector("#username");
+    var email = document.querySelector("#email");
+    var password = document.querySelector("#password")
+    var typeCreate = document.querySelector("#typeCreate");
+    var requiresCard = document.querySelector("#requiresCard");
+    
+    axios.post(url, {
+        data: {
+            username : username.value,
+            email : email.value,
+            password : password.value
+        }, params: {
+            typeCreate : typeCreate.value,
+            requiresCard : requiresCard.value
+        }}).then(response => response.status).catch(err => console.warn(err)); 
+                console.log("Withdraw when through");
+        };
 
 
 // ======================== Login HTTP REQUEST ============================
@@ -111,6 +115,20 @@ withdrawRequest = () => {
     }}).then(response => response.status).catch(err => console.warn(err)); 
         console.log("Withdraw when through");
 };
+
+
+//COULDN'T GET IT TO WORK (400 STATUTS)
+getUserAccountRequest = () => {
+    console.log("ENTEREING THE GET USER ACCOUNT INFORMATION");
+    var url4 = "http://localhost:8080/client/";
+    var userID = document.querySelector("#getUserID");
+    axios.get(url4+userID).then(response => {
+        console.log(response.data);
+        document.querySelector("#userAccountModal").innerHTML = JSON.stringify(response.data);
+        console.log("Getting information");
+        alert("Getting your information for you now!")
+    });
+    };
 
 
 

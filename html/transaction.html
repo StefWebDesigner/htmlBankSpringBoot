@@ -56,10 +56,12 @@
             </div>
 
             <div class="form-function-container">
-                <h3 class="form-account-label">Show All Account </h3>
-                <div class="showClientAccountModal" id="userAccount"></div>
+                <h3 class="form-account-label"> Show user accounts </h3>
+                <label class="form-label" for="getUserID">Enter userID</label>
+                <input type="text" placeholder="Enter userID" name="getUserID" id="getUserID">
+                <div class="showClientAccountModal" id="userAccountModal"></div>
                 <div class="button-container">
-                    <button type="submit" class="form-button" onclick="getRequest()">Get Current Balance Now</button>
+                    <button type="submit" class="form-button" onclick="getUserAccountRequest()">Get Current Balance Now</button>
                 </div>
             </div>
             

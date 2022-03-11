@@ -195,7 +195,7 @@ input:focus {
 }
 
 .logo {
-  margin-top: 50px;
+  margin-top: 75px;
   width: 90%;
   -webkit-animation: rotation 5s linear infinite;
           animation: rotation 5s linear infinite;
