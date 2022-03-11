@@ -74,7 +74,7 @@ getAccountByCheckingRequest = () => {
             document.querySelector("#accountByCheckingAccount").innerHTML = JSON.stringify(response.data);
             alert(`All bank accounts for ${checkingType} account are shown`);
     });
-}
+};
 
 
 
@@ -96,17 +96,21 @@ depositRequest = () => {
         console.log("Deposit when through");
 };
         
-        
-// withdrawRequest = () => {
-//     var url = "http://localhost:8080/account/withdraw";
-//      amount = document.querySelector("#withdraw");
-//      id = document.querySelector("#withdrawBankId");
-//     axios.post(url, null, { params: {
-//         id : id.value,
-//         amount : amount.value
-//     }}).then(response => response.status).catch(err => console.warn(err)); 
-//         console.log("Withdraw when through");
-// };
+      //TO DEPOSIT MONEY INTO AN ACCOUNT 
+//UNFORTUNATELY i HAVE TO HARD CODE AN ID THOUGH :(
+// - I would need to try and target the id from the login 
+//and this is seen when looking at the console--- so it may 
+//that is where to look
+withdrawRequest = () => {
+    var url = "http://localhost:8080/account/withdraw";
+     amount = document.querySelector("#withdraw");
+     id = document.querySelector("#withdrawBankId");
+    axios.post(url, null, { params: {
+        id : id.value,
+        amount : amount.value
+    }}).then(response => response.status).catch(err => console.warn(err)); 
+        console.log("Withdraw when through");
+};
 
 
 
